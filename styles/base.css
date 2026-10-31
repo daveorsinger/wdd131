@@ -93,3 +93,7 @@ footer p {
 #lastModified {
     color:#ffdf80;
 }
+.card li a {
+    display: inline-block;
+    padding: 6px 0;
+}
