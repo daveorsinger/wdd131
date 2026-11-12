@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Information about Utah, including facts and weather.">
+    <meta name="author" content="David Orsinger">
+    <title>Utah | WDD 131 Country Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Utah</h1>
+    </header>
+
+    <main>
+        <picture class="hero">
+        <source media="(min-width: 600px)" srcset="images/utah-wide.webp">
+        <img src="images/utah-small.webp" alt="Scenic mountain landscape in Utah">
+        </picture>
+
+
+    <section class="data">
+        <h2>Data</h2>
+        <p><strong>Capital:</strong> Salt Lake City</p>
+        <p><strong>Region:</strong> Western United States</p>
+        <p><strong>Nickname:</strong> Beehive State</p>
+        <p><strong>Largest City:</strong> Salt Lake City</p>
+        <p><strong>Time Zone:</strong> Mountain Time</p>
+    </section>
+
+    <section class="weather">
+        <h2>Weather</h2>
+        <img class="weather-icon" src="images/sunny.svg" alt="Sunny weather">
+        <p><strong>Temperature:</strong> 45 °F</p>
+        <p><strong>Conditions:</strong> Sunny</p>
+        <p><strong>Wind:</strong> 8 mph</p>
+        <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+    </section>
+    </main>
+
+<footer>
+    <p>&copy; <span id="currentyear"></span> David Orsinger | Utah</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+</body>
+</html>

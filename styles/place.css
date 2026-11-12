@@ -1,0 +1,104 @@
+:root {
+    --primary-color: #17384d;
+    --secondary-color: #f1f4f5;
+    --text-color: #222;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+.hero {
+    display: block;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center 30%;
+}
+
+section {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+}
+
+section p {
+    margin: 0.75rem 0;
+}
+
+.weather {
+    background-color: var(--secondary-color);
+}
+.weather-icon {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+@media screen and (min-width: 800px) {
+    main {
+        position: relative;
+    }
+
+@media screen and (min-width: 800px) {
+    main {
+        position: relative;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .data,
+    .weather {
+        position: absolute;
+        width: 270px;
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .data {
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+
+    .weather {
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+
+    .weather h2::after {
+        content: " ☀️";
+    }
+}
